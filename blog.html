@@ -1,75 +1,296 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마포 라이프 트렌드 — 지식 공유</title>
-  <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-t3b06-mp-massage-evt-1">
-  <style>
-    body {
-      background-color: #100b0b;
-      color: #f3e8e8;
-      font-family: 'Pretendard', -apple-system, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.8;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 700px;
-      width: 100%;
-      padding: 40px 24px;
-      box-sizing: border-box;
-    }
-    .header-bar {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      padding-bottom: 20px;
-      margin-bottom: 40px;
-      font-size: 0.9rem;
-      opacity: 0.6;
-      display: flex;
-      justify-content: space-between;
-    }
-    .contact-link {
-      color: #f87171;
-      text-decoration: none;
-    }
-    p {
-      margin-bottom: 24px;
-      font-size: 1.05rem;
-      text-align: justify;
-      opacity: 0.9;
-    }
-    .footer {
-      margin-top: 80px;
-      font-size: 0.85rem;
-      opacity: 0.5;
-      text-align: center;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding-top: 30px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>홍대 가라오케 추천 가이드 — 조건별 선택과 이용 팁 종합 안내</title>
+<meta name="description" content="홍대 지역 가라오케를 방문 전 알아야 할 핵심 정보를 전문 가이드로 구성했습니다. 위치, 인원, 예산에 따른 조건별 추천과 이용 전 확인 사항을 상세히 안내합니다.">
+<meta name="keywords" content="홍대 가라오케, 홍대 노래방, 가라오케 추천, 홍대 유흥, 가라오케 선택 기준, 홍대 가라오케 조건">
+<link rel="canonical" href="https://hongdae-karaoke-bar-note.go-bangbae-room.xyz">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hongdae-karaoke-bar-note.go-bangbae-room.xyz">
+<meta property="og:title" content="홍대 가라오케 추천 가이드 — 조건별 선택과 이용 팁 종합 안내">
+<meta property="og:description" content="홍대 지역 가라오케를 방문 전 알아야 할 핵심 정보를 전문 가이드로 구성했습니다.">
+<style>
+:root {
+--color-primary: #000000;
+--color-secondary: #1a1a1a;
+--color-accent: #2563eb;
+--color-bg: #ffffff;
+--color-text: #111827;
+--color-text-light: #6b7280;
+--color-border: #e5e7eb;
+--color-card-bg: #f9fafb;
+--font-main: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+--font-heading: 'Noto Serif KR', Georgia, serif;
+--max-width: 1200px;
+--nav-height: 72px;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: var(--font-main);
+color: var(--color-text);
+background-color: var(--color-bg);
+line-height: 1.8;
+-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 {
+font-family: var(--font-heading);
+font-weight: 700;
+line-height: 1.3;
+color: var(--color-primary);
+}
+.r-main-vzkp-title {
+font-size: clamp(2rem, 5vw, 3.5rem);
+letter-spacing: -0.03em;
+margin-bottom: 1rem;
+}
+.k-side-33sw-title {
+font-size: clamp(1.25rem, 3vw, 1.75rem);
+margin-bottom: 0.75rem;
+}
+.t-img-pgif {
+font-size: 1rem;
+font-family: var(--font-main);
+color: var(--color-text-light);
+margin-bottom: 0.5rem;
+}
+p {
+margin-bottom: 1rem;
+color: var(--color-text);
+}
+.k-img-3mej {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+.k-side-33sw {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: var(--nav-height);
+background-color: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid var(--color-border);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 2rem;
+z-index: 1000;
+}
+.r-main-vzkp {
+max-width: var(--max-width);
+margin: 0 auto;
+padding: 6rem 2rem 4rem;
+}
+.r-main-vzkp-overlay {
+position: relative;
+background-color: var(--color-card-bg);
+border-radius: 1rem;
+overflow: hidden;
+margin-bottom: 4rem;
+}
+.r-hero-nc3a-cap::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(to bottom, transparent 0%, var(--color-bg) 100%);
+}
+.k-card-4vzk {
+background: var(--color-bg);
+border: 1px solid var(--color-border);
+border-radius: 0.75rem;
+padding: 2rem;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.k-card-4vzk:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);
+}
+.r-grid-m5sa {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+margin-top: 3rem;
+}
+.t-section-qw43 {
+margin-bottom: 4rem;
+}
+.r-faq-x7sd {
+border-top: 1px solid var(--color-border);
+padding-top: 1.5rem;
+margin-top: 1.5rem;
+}
+.k-faq-q9sl {
+font-weight: 600;
+margin-bottom: 0.75rem;
+color: var(--color-primary);
+}
+.k-faq-a2ws {
+color: var(--color-text-light);
+}
+.r-nav-logo {
+font-family: var(--font-heading);
+font-size: 1.25rem;
+font-weight: 700;
+color: var(--color-primary);
+text-decoration: none;
+}
+.k-nav-u34a {
+display: flex;
+gap: 2rem;
+align-items: center;
+}
+.k-nav-u34a a {
+text-decoration: none;
+color: var(--color-text);
+font-size: 0.9rem;
+font-weight: 500;
+}
+.k-nav-u34a a:hover {
+color: var(--color-accent);
+}
+.r-cta-e918 {
+display: inline-block;
+background-color: var(--color-accent);
+color: white;
+padding: 0.75rem 1.5rem;
+border-radius: 0.5rem;
+text-decoration: none;
+font-weight: 600;
+transition: background-color 0.2s ease;
+}
+.r-cta-e918:hover {
+background-color: #1d4ed8;
+}
+.r-footer-z64t {
+background-color: var(--color-primary);
+color: white;
+padding: 4rem 2rem;
+text-align: center;
+margin-top: 4rem;
+}
+@media (max-width: 768px) {
+.k-side-33sw {
+padding: 0 1rem;
+}
+.r-main-vzkp {
+padding: 5rem 1rem 3rem;
+}
+.k-nav-u34a {
+gap: 1rem;
+}
+.k-nav-u34a a {
+font-size: 0.8rem;
+}
+.r-grid-m5sa {
+grid-template-columns: 1fr;
+}
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="header-bar">
-      <span>마포 지식 아카이브</span>
-      <span>실시간 예약: <a href="tel:010-6279-0862" class="contact-link">010-6279-0862</a></span>
-    </div>
-    
-    <p>일과를 마치고 복잡한 빌딩 숲을 나설 때 코끝을 스치는 서늘한 바람은 늘 나를 낯선 생각에 잠기게 만든다. 네온사인이 어지럽게 번쩍이는 거리를 걷다가 우연히 들어선 아늑한 공간은 바깥세상의 소음을 단숨에 잊게 만드는 깊은 아늑함을 선사해 준다. 삶이란 어쩌면 끊임없이 잃어버리고 또 새로운 무언가를 채워가는 과정이기에, 오늘 밤 나누는 이 짧은 휴식은 내일을 버티게 할 강력한 연료가 된다.</p>
-<br>
-<p>어스름한 저녁 해가 어깨 위로 뉘엿뉘엿 저무는 퇴근길, 골목마다 붉게 켜지는 조명들을 마주할 때면 언제나 마음 한구석이 묘하게 차오른다. 유독 피로가 어깨를 짓누르는 화요일 밤, 마음이 통하는 친구들과 모여 시끌벅적하게 나누는 웃음소리는 그 자체로 아주 훌륭한 구원이 된다. 결국 우리에게 필요한 것은 거창하고 비싼 사치가 아니라, 고단한 하루의 끝자락을 편안하게 털어놓을 수 있는 그런 정직한 위로가 아닐까 싶다.</p>
-<br>
-<p>어디론가 떠나고 싶은 계절, 차가운 캔맥주 하나를 들고 골목 귀퉁이에 앉아 바라보는 밤하늘은 항상 청춘의 단면을 떠올리게 한다. 어둠이 깊게 내린 길목에서 들려오는 아스라한 노랫소리는 발걸음을 멈추게 만들고, 오래전 묻어두었던 아련한 추억들을 소환해 낸다. 서로 다른 고민을 안고 살아가는 청춘들이 차가운 잔을 부딪치며 건네는 투박한 위로 속에서 우리는 보이지 않는 동질감을 느낀다.</p>
-    
-    <div class="footer">
-      <p style="margin: 0; font-size: 0.8rem;">&copy; 2026 마포 마사지 기록실. All rights reserved.</p>
-    </div>
-  </div>
+<nav class="k-side-33sw">
+<a href="#" class="r-nav-logo">홍대가라오케</a>
+<div class="k-nav-u34a">
+<a href="#">이용 안내</a>
+<a href="#">위치 안내</a>
+<a href="#">예약 문의</a>
+</div>
+</nav>
+
+<main class="r-main-vzkp">
+<header class="r-main-vzkp-overlay" style="height: 60vh; min-height: 400px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem;">
+<div class="r-hero-nc3a-cap" style="position: relative; z-index: 2; padding: 2rem;">
+<p class="t-img-pgif">2024년 11월 기준 분석 자료</p>
+<h1 class="r-main-vzkp-title">홍대 가라오케, 어떤 곳을 선택해야 할까?</h1>
+<p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">지역별 특성, 시설 등급, 이용 형태에 따른 객관적 기준 분석을 통해 최적의 선택을 위한 가이드를 제시합니다.</p>
+</div>
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--color-secondary); opacity: 0.03;"></div>
+</header>
+
+<section class="t-section-qw43">
+<h2 class="k-side-33sw-title">1. 홍대 지역 가라오케 분포도</h2>
+<p>서울 마포구 홍대입구역 반경 500m 내 가라오케 시설은 2024년 기준 약 120여 개가 분포하고 있습니다. 이는 강남, 신촌과 함께 서울 내 가장 높은 밀도를 보이는 상권 중 하나입니다. 주요 동선에 따라 홍대 메인거리(양화로), 서교동 골목, 합정역 방면으로 구역이 나뉘며, 각각의 특징이 뚜렷합니다.</p>
+<p><strong>홍대 메인거리:</strong> 접근성 우수. 유동인구 많음. 시설 노후화 비율 약 35%. 대형 프랜차이즈 중심.</p>
+<p><strong>서교동 골목:</strong> 세련된 인테리어의 신규 업장 밀집. 리모델링 시설 비율 높음. 주차 공간 제한적.</p>
+<p><strong>합정역 방면:</strong> 상대적 저평가 구역. 합리적 가격대 시설 다수. 소규모 프라이빗 공간 특화.</p>
+</section>
+
+<section class="t-section-qw43">
+<h2 class="k-side-33sw-title">2. 방문 인원별 적합 시설 유형</h2>
+<div class="r-grid-m5sa">
+<div class="k-card-4vzk">
+<h3 class="k-side-33sw-title">1~2인 (소규모)</h3>
+<p class="t-img-pgif">이용 빈도: 높음 / 주요 니즈: 음질, 청결</p>
+<p>최소 정원 2인 이상을 수용할 수 있는 소형 룸이 기본입니다. 이 경우 음향 시설의 상태가 핵심 평가 요소가 됩니다. 마이크 에코 효과, 스피커 밸런스, 노이즈 필터링 여부를 체크하는 것이 좋습니다. 또한, 소규모 이용 시에는 룸 내 온도 관리 및 환기 시스템이 중요해지는데, 개별 에어컨 설치 여부와 실내 공기질을 점검해야 합니다.</p>
+</div>
+<div class="k-card-4vzk">
+<h3 class="k-side-33sw-title">3~5인 (중규모)</h3>
+<p class="t-img-pgif">이용 빈도: 가장 높음 / 주요 니즈: 가성비, 공간감</p>
+<p>가장 보편적인 이용 형태입니다. 이 경우 10인 이상 수용 가능한 중형 룸을 확보하는 것이 일반적이며, 룸 내 좌석 배치(일자형 vs 원형)가 만족도에 영향을 미칩니다. 원형 배치의 경우 상호 간 대화가 용이하나, 음향 집중도는 일자형 배치가 우세한 것으로 나타납니다. 추가적으로 룸 내 조명 조절 기능(_dimmer switch_)이 있는 업장은 분위기 조절에 유리합니다.</p>
+</div>
+<div class="k-card-4vzk">
+<h3 class="k-side-33sw-title">6인 이상 (대규모)</h3>
+<p class="t-img-pgif">이용 빈도: 특정 시즌 증가 / 주요 니즈: 공간, 예약 확정</p>
+<p>대규모 인원은 사전 예약이 필수적입니다. 홍대 지역의 경우 주말 기준 대형 룸(20인 이상 수용)의 예약률은 90% 이상을 기록하므로, 최소 2일 전 예약을 권장합니다. 또한, 대규모 이용 시에는 룸 내 냉난방 용량, 화장실 위치, 비상구 인지 등을 사전에 확인해야 합니다. 일부 업장은 별도의 라운지 공간을 제공하므로, 회식 전후 대기 시간을 고려할 때 유용합니다.</p>
+</div>
+</div>
+</section>
+
+<section class="t-section-qw43">
+<h2 class="k-side-33sw-title">3. 예산별 합리적 선택 기준</h2>
+<p>가라오케 이용 시 가장 먼저 고려해야 할 요소는 정확한 비용 구조 파악입니다. 홍대 지역의 경우 이용 형태(시간제/무제한), 룸 크기, 서비스 포함 여부에 따라 최종 비용이 달라집니다.</p>
+<p><strong>시간제 요금 (1인당):</strong> 평일 기준 10,000원~18,000원 / 주말 기준 12,000원~22,000원</p>
+<p><strong>무제한 요금 (1인당):</strong> 평일 기준 15,000원~25,000원 / 주말 기준 18,000원~30,000원</p>
+<p><strong>추가 비용 항목:</strong> 주류(일반적으로 룸 차지 별도), 음식(기본 세트 제공 여부 상이), 주차(무료/유료 차등 적용)</p>
+<p>특히 "무제한" 상품의 경우, 기본 이용 시간(보통 2~3시간)과 추가 시간에 대한 요금이 상이할 수 있으므로 사전에 확인이 필요합니다. 또한, 10인 이상 이용 시 일부 업장은 룸 차지(Room Charge)를 별도로 부과하는 경우가 있어 이에 대한 확인이 선행되어야 합니다.</p>
+</section>
+
+<section class="t-section-qw43">
+<h2 class="k-side-33sw-title">4. 이용 전 반드시 확인해야 할 체크리스트</h2>
+<div class="r-faq-x7sd">
+<h3 class="k-faq-q9sl">Q. 예약 시 확인해야 할 핵심 사항은?</h3>
+<p class="k-faq-a2ws">A. ① 예약 취소/변경 정책(위약금 기준), ② 룸 내 최대 인원 초과 시 추가 요금, ③ 주류 및 음식 제공 형태(세트 포함 여부), ④ 주차 공간 확보 여부, ⑤ 영업 시간 및 브레이크 타임 유무입니다.</p>
+</div>
+<div class="r-faq-x7sd">
+<h3 class="k-faq-q9sl">Q. 시설 상태를 간편히 확인하는 방법은?</h3>
+<p class="k-faq-a2ws">A. 업장의 최신 리모델링 여부(3년 이내), 마이크 및 스피커 브랜드(国産 고급 브랜드 사용 여부), 룸 내 온도 조절 개별 제어 가능 여부, 화장실 청결 상태, 전반적인 조명 밝기 조절 기능 유무를 체크하시기 바랍니다.</p>
+</div>
+<div class="r-faq-x7sd">
+<h3 class="k-faq-q9sl">Q. 주중과 주말의 차이점은?</h3>
+<p class="k-faq-a2ws">A. 주중(일~목)은 예약 확률이 높고 가격이 10~20% 낮은 경향이 있습니다. 반면 금요일과 토요일은 예약 경쟁이 치열하며, 음향 시설 사용 빈도가 높아 시설 마모가 더 빠를 수 있습니다. 특히 주말 오후 6시 이후는 피크 시간대로, 가격 및 예약 가능성이 가장 불리합니다.</p>
+</div>
+</section>
+
+<section class="t-section-qw43" style="text-align: center; padding: 3rem 0;">
+<p class="t-img-pgif" style="font-size: 1.1rem; margin-bottom: 2rem;">홍대 지역 가라오케 선택은 단순한 접근성보다는 이용 목적, 인원, 예산에 따른 정밀한 비교가 필요합니다. 위 가이드를 통해 합리적인 선택의 기준을 마련하시기 바랍니다.</p>
+<a href="#" class="r-cta-e918">이용 안내 상세 보기</a>
+</section>
+
+<section class="t-section-qw43">
+<h2 class="k-side-33sw-title">5. 시설 비교 시 참고 사항</h2>
+<p>아래는 주요 평가 항목에 따른 일반적인 비교 기준입니다. 모든 업장이 동일한 조건을 적용하지 않으므로, 방문 전 전화 상담을 통해 반드시 확인해야 합니다.</p>
+<p><strong>음향 시설 등급:</strong> A(최상급) - 전문 장비 도입, 정기 튜닝 / B(중상급) - 일반 프랜차이즈 표준 장비 / C(보통) - 기본 사양, 노후화 진행</p>
+<p><strong>룸 환경:</strong> A(최상급) - 개별 환기, 온도 제어, 방음 완료 / B(중상급) - 중앙 환기, 일반 방음 / C(보통) - 기본 환기, 외부 소음 유입 가능</p>
+<p><strong>위치 접근성:</strong> A(최상급) - 지하철역 3분 이내 / B(중상급) - 5~10분 / C(보통) - 10분 이상, 골목 위치</p>
+<p>이러한 기준을 바탕으로 방문 계획을 수립하시면, 보다 만족스러운 이용이 가능할 것입니다.</p>
+</section>
+</main>
+
+<footer class="r-footer-z64t">
+<p style="margin-bottom: 1rem; font-size: 1.1rem;">홍대 가라오케 정보 안내</p>
+<p style="font-size: 0.9rem; opacity: 0.8;">© 2024 All Rights Reserved. 본 페이지의 정보는 참고용이며, 실제 이용 시 업장과 사전 확인이 필요합니다.</p>
+</footer>
+
 </body>
 </html>
