@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
+  <title>홍대 가라오케 추천 가이드</title>
+  <rect width="64" height="64" rx="12" fill="hsl(185 70% 35%)"/>
+  <g transform="rotate(90 32 32)"><path d="M12 44 26 24l10 12 6-8 8 16Z" fill="hsl(300 68% 62%)"/><path d="M12 44 26 24l10 12" fill="none" stroke="hsl(185 24% 96%)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/></g>
+</svg>
