@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hongdae-karaoke-bar-note.go-bangbae-room.xyz/sitemap.xml
